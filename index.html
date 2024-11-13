@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/queries.css">
+    <title>TMK Fitness Center</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="brand">
+            <a href="#hero"><img src="/images/logo-negative.png" alt="">
+            </a>
+            </div>
+            <div class="nav-lists">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#membership-plans">membership plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button><a href="#">Join</a></button>
+                </ul>
+            </div>
+            <div class="nav-lines" >
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            </div>
+        </nav>
+        <aside>
+           <div id="sidebar">
+            <div class="side-brand">
+                <a href="#hero"><img src="/images/logo-negative.png" alt=""></a>
+                <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <div class="side-lists">
+                <ul>
+                    <li><a href="#about"onclick="closeNav()">About</a></li>
+                    <li><a href="#classes"onclick="closeNav()">Classes</a></li>
+                    <li><a href="#trainers"onclick="closeNav()" >Trainers</a></li>
+                    <li><a href="#membership-plans"onclick="closeNav()">membership plans</a></li>
+                    <li><a href="#contact"onclick="closeNav()">Contact</a></li>
+                </ul>
+            </div>
+            <div class="side-buttons">
+                <button><a href="#">Join</a></button>
+            </div>
+           </div>
+        </aside>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero">
+            <h1>Elevate your fitness journey with us!</h1>
+            <div class="hero-but">
+                <button> <a href="#membership-plans">book now</a>
+                </button>
+            </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about">
+          <div class="left">
+            <h1>About <span class="orange">us</span></h1>
+          <p>Our expertise extends beyond product offerings to include gym membership services, catering to diverse fitness needs and aspirations.
+          Our commitment to providing innovative solutions, exceptional products, and unparalleled customer service defines who we are and what we stand for.
+          Our dedication to innovation means we stay ahead of the curve, sourcing the latest equipment and technologies to bring you the best in fitness advancement.</p>
+            <button>contact us</button>
+          </div>
+          <div class="right">
+           <div class="img-cont">
+            <img src="/images/about.jpg" alt="">
+           </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="classes">
+  <div class="classes">
+   <div class="class-head">
+    <h1>our classes</h1>
+   </div>
+    <div class="class-cards">
+        <div class="class-card-1">
+            <div class="card-1-img">
+                <img src="/images/strength training.jpg" alt="">
+            </div>
+            <h1>strength training</h1>
+            
+        </div>
+        <div class="class-card-2">
+          <div class="card-2-img">
+            <img src="/images/bodybuilding.jpg" alt="">
+          </div>
+            <h1>body building</h1>
+            
+        </div>
+        <div class="class-card-3">
+          <div class="card-3-img">
+            <img src="/images/yoga.jpg" alt="">
+          </div>
+            <h1>Yoga</h1>
+            
+        </div>
+        <div class="class-card-4">
+          <div class="card-4-img">
+            <img src="/images/gymnastics.jpg" alt="">
+          </div>
+            <h1>gymnastics</h1>
+            
+        </div>
+    </div>
+  </div>
+      </section>
+      <section id="trainers">
+        <div class="trainers">
+          <div class="train-head">
+            <h1>Our trainers</h1>
+          </div>
+         <div class="train-card">
+            <div class="image">
+                <img src="/images/body building coach.jpg" alt="">
+                <div class="content">
+                    <h1>sam francis</h1>
+                    <h2>body building trainer</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/strength training coach.jpg" alt="">
+                <div class="content">
+                    <h1>walter white</h1>
+                    <h2>strength trainer</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/images/gymnastics coasch.jpg" alt="">
+                <div class="content">
+                    <h1>gustavo</h1>
+                    <h2>Gymnastics Trainer</h2>
+                </div>
+            </div>
+             <div class="image">
+                <img src="/images/yoga coach.jpg" alt="">
+                <div class="content">
+                    <h1>megna</h1>
+                    <h2>yoga trainer</h2>
+                </div>
+            </div>
+         </div>
+        </div>
+      </section>
+      <section id="membership-plans">
+        <div class="membership">
+           <div class="mem-head">
+            <h1>our membership plans</h1>
+           </div>
+           <div class="mem-cards">
+            <div class="mem-card-1">
+              <h2>basic</h2>
+              <h1>$50<span>/mo</span></h1>
+              <ul>
+                <li><i class="fa-solid fa-dumbbell"></i> gym with trainers</li>
+                <li><i class="fa-solid fa-dumbbell"></i> access to gym facilities</li>
+                <li><i class="fa-solid fa-dumbbell"></i> limites group fitness classes</li>
+                <li><i class="fa-solid fa-dumbbell"></i> standard locker room access</li>
+              </ul>
+              <button><a href="#">Book now</a></button>
+            </div>
+            <div class="mem-card-2">
+              <h2>standard</h2>
+              <h1>$90<span>/mo</span></h1>
+              <ul>
+                <li><i class="fa-solid fa-dumbbell"></i> unlimites access to gym facilities</li>
+                <li><i class="fa-solid fa-dumbbell"></i> access to all group fitness classes</li>
+                <li><i class="fa-solid fa-dumbbell"></i> premium locker room access</li>
+                <li><i class="fa-solid fa-dumbbell"></i> towel service included</li>
+              </ul>
+              <button><a href="#">book now</a></button>
+            </div>
+            <div class="mem-card-3">
+              <h2>professional</h2>
+              <h1>$150<span>/mo</span></h1>
+              <ul>
+                <li><i class="fa-solid fa-dumbbell"></i> personalized workout plans</li>
+                <li><i class="fa-solid fa-dumbbell"></i> all premium benifits</li>
+                <li><i class="fa-solid fa-dumbbell"></i> premium locker room access</li>
+                <li><i class="fa-solid fa-dumbbell"></i> additional session</li>
+              </ul>
+              <button><a href="#">book now</a></button>
+            </div>
+           </div>
+        </div>
+
+      </section>
+      <section id="contact">
+        <div class="contact">
+          <div class="left">
+            <h1>get in touch</h1>
+            <div class="left-form">
+            <form action="">
+              <div lass="in-1">
+                <label for="name">name</label> <br>
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="in-2">
+                <label for="email">email address</label> <br>
+                <input type="email" placeholder="Email Address">
+              </div>
+              <div class="in-3">
+                <label for="mobile"> mobile no.</label> <br>
+                <input type="text" placeholder="Mobile Number">
+              </div>
+              <div class="in-4">
+                <input type="submit">
+              </div>
+            </form>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-1">
+             <h1> <i class="fa-solid fa-location-dot"></i> our address</h1>
+             <p>no 2 bharathiyar street, nehru nagar velachery,chennai-42</p>
+            </div>
+            <div class="right-2">
+              <h1><i class="fa-solid fa-envelope"></i> email</h1>
+              <p>tmkfitness14@gmail.com</p>
+            </div>
+            <div class="right-3">
+              <h1><i class="fa-solid fa-phone"></i> mobile no.</h1>
+              <p>1234567890</p>
+            </div>
+            <siv class="right-4">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </siv>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>copyright@2024 tmk fitness center</p>
+      </footer>
+    </main>
+    
+
+    <script src="/js/main.js">
+
+    </script>
+</body>
+</html>

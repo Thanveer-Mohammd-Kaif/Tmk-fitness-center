@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: myfont-1;
+    src: url(/fonts/bunker_stencil/BunkerStencil-Regular.otf);
+}
+@font-face {
+    font-family: myfont-2;
+    src: url(/fonts/fabula_valhalla/Fabula\ Valhalla\ bd.ttf);
+}
+@font-face {
+    font-family: myfont-3;
+    src: url(/fonts/face_off_m54/Face\ Off\ M54.ttf);
+}
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    transition: all 0.3s;
+}
+nav .brand img{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-lists ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.nav-lists  ul li{
+    list-style-type: none;
+}
+.nav-lists ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: myfont-3;
+    color: white;
+    
+}
+.nav-lists button{
+    padding: 12px 40px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid orange;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-lists button a{
+    color: black;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.nav-lines{
+    display: none;
+}
+.nav-lines .fa-solid{
+    font-size: 30px;
+    color: white;
+}
+.bgcolor{
+    background-color: black;
+    color: white;
+}
+/* SIDEBAR */
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(93deg, #333 35%, #222 63%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0%;
+    overflow-x: hidden;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    padding: 30px 0px;
+    transition: all 0.2s;
+}
+#sidebar .side-brand{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap:100px;
+}
+#sidebar .side-brand img{
+    width: 130px;
+}
+#sidebar .side-lists ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: black;
+    align-items: center;
+}
+.side-lists ul li{
+    list-style-type: none;
+}
+.side-lists ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: myfont-3;
+    font-size: 20px;
+}
+.side-brand a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.side-brand .fa-solid{
+    font-size: 28px;
+}
+aside .side-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.side-buttons button{
+    padding: 10px 40px;
+    color: black;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid orange;
+    background-color: orange;
+} 
+.side-buttons button a{
+    color: black;
+    text-decoration: none;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+}
+/* HERO SECTION */
+.hero{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(/images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    /* background-attachment:fixed; */
+}
+.hero h1{
+    color: white;
+    text-transform: capitalize;
+    font-family: myfont-1;
+    font-size: 90px;
+    letter-spacing:2px;
+    padding: 0 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.hero-but{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.hero-but button:nth-child(1){
+    padding: 15px 60px;
+    border: 2px solid orange;
+    outline: 2px solid orange;
+    outline-offset: 4px;
+    background-color: orange;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.hero-but button:nth-child(1) a{
+    color: black;
+    text-decoration: none;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+}
+/* ABOUT */
+.about{
+    display: flex;
+    gap: 40px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+     background: black ;
+    padding:80px 60px 0 ;
+}
+.about .left{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.about .left h1{
+    font-size: 50px;
+    color: white;
+    font-family: myfont-1;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.about .left p{
+    font-size: 22px;
+    padding-right: 70px;
+    line-height: 30px;
+    font-family: myfont-2;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.about .left button{
+    width: 25%;
+    padding: 10px 0;
+    background-color: orange;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+}
+.about .right .img-cont{
+    width: 500px;
+    overflow: hidden; 
+    background-color:black;
+    outline: 5px solid orange;
+}
+.about .right img{
+    width: 500px;
+    transition: all 0.4s;  
+}
+.right .img-cont:hover img {
+    transform: scale(1.8);
+    opacity: 85%;
+}
+.classes{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background:black;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0 0;
+}
+.classes .class-head h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: white;
+    font-family: myfont-1;
+    word-spacing: 2px;
+}
+.class-cards{
+ display: flex;
+ gap: 30px;
+ padding: 0 30px;
+}
+.class-card-1,.class-card-2,.class-card-3,.class-card-4{
+    width: 300px;
+    height: fit-content;
+    outline: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    border-radius: 0 0 ;
+    background-color: #222;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    outline: 3px solid orange;
+}
+.card-1-img img:hover ,.card-2-img img:hover,.card-3-img img:hover,.card-4-img img:hover{
+    transform: scale(1.5);
+    opacity: 80%;
+
+}
+.card-1-img,.card-2-img,.card-3-img,.card-4-img{
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.class-cards img{
+    width: 100%;
+    opacity: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.4s;
+}
+.class-cards h1{
+    text-transform: capitalize;
+    color: white;
+    font-size: 28px;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+}
+/* Trainers Section */
+.trainers{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top:80px;
+    gap: 40px;
+    justify-content: center;
+    background: linear-gradient(93deg, #333 35%, #222 63%);
+    align-items: center;
+}
+.trainers .train-card{
+    display: flex;
+    gap: 30px;
+}
+.train-head h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: white;
+    font-family: myfont-1;
+    word-spacing: 2px;
+}
+.train-card .image{
+    outline: 5px solid black;
+    background-color: black;
+    border-radius: 10px;
+    width: 280px;
+    position: relative;
+}
+.train-card  img{
+    width: 100%;
+    border-radius: 20px;
+}
+.train-card .content{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.content h1{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.content h2{
+    color: white;
+    font-family: myfont-2;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.trainers .content:hover{
+    opacity: 1;
+}
+.membership{
+background: black;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 60px;
+gap: 50px;
+}
+.membership h1{
+    color: white;
+    font-family: myfont-1;
+    word-spacing: 2px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.mem-cards{
+    display: flex;
+    gap: 40px;
+}
+.mem-card-1,.mem-card-2,.mem-card-3{
+    width: 350px;
+    border-radius: 10px;
+    outline: 1px solid white;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/images/membership\ card.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.mem-card-1 h2,.mem-card-2 h2,.mem-card-3 h2{
+    color: white;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: myfont-3;
+    letter-spacing: 2px;
+}
+.mem-card-1 h1,.mem-card-2 h1,.mem-card-3 h1{
+    font-size: 45px;
+    font-family: myfont-1;
+}
+.mem-card-1 h1 span,.mem-card-2 span,.mem-card-3 span{
+    font-size: 20px;
+}
+
+.mem-card-1 li .fa-solid,.mem-card-2 li .fa-solid,.mem-card-3 li .fa-solid{
+    rotate: 120deg;
+    margin-right: 10px;
+}
+
+.mem-card-1 ul,.mem-card-2 ul,.mem-card-3 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mem-card-1 li,.mem-card-2 li,.mem-card-3 li{
+    list-style-type: none;
+    text-transform: capitalize;
+    color: white;
+    font-family: myfont-2;
+    font-size: 18px;
+}
+.mem-card-1 button,.mem-card-2 button,.mem-card-3 button{
+   padding: 10px 30px;
+   background-color: orange;
+   border: 2px solid orange;
+}
+.mem-card-1 button a,.mem-card-2 button a,.mem-card-3 button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(93deg, #333 35%, #222 63%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 120px 0 20px;
+    align-items: center;
+}
+.contact .left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px 40px;
+    border-left:5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 20px 0px 0px 20px;
+}
+.left form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left h1{
+    font-size: 42px;
+    font-family: myfont-1;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+.left-form label{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: myfont-2;
+}
+.left-form input{
+    width: 300px;
+    padding: 8px 8px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 2px solid black;
+    background-color: white;
+    background-color: transparent;
+    color: black;
+    font-family: myfont-2;
+    border-radius: 5px;
+}
+.left-form .in-4 input{
+    border: 2px solid black;
+    background-color: orange;
+    font-size: 18px;
+    font-family: myfont-3;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.contact .right{
+    display: flex;
+    flex-direction: column;
+    border-right:5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 45px 40px;
+    background-color: orange;
+    gap: 48px;
+    border-radius: 0 20px 20px 0;
+}
+.contact .right h1{
+    font-size: 28px;
+    text-transform: capitalize;
+    font-family: myfont-1;
+}
+.right-1,.right-2,.right-3{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.right-1 p,.right-2 p,.right-3 p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: myfont-2;
+}
+.right-4{
+    display: flex;
+    gap: 30px;
+}
+.right-4 .fa-brands{
+    font-size: 40px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 25px;
+    text-transform:capitalize;
+    font-family: myfont-3;
+}
